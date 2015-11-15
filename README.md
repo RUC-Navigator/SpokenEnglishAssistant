@@ -6,7 +6,7 @@ the server part
 - ``npm install express``
 - ``npm install connect-multiparty``
 - ``npm install watson-developer-cloud``
-- 
+
 
 ## Run
 
