@@ -1,0 +1,11 @@
+launchConfigurations/
+public/out/*.wav
+public/out/*.txt
+public/out/*.wav_transcription
+public/out/case1/*.txt
+public/out/case3/*.wav
+public/out/case3/*.txt
+public/out/case3/*.wav_transcription
+public/uploads/*.wav
+public/uploads/case1/*.wav
+public/uploads/case3/*.wav

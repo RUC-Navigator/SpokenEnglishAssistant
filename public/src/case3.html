@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="watson, spoken English">
+
+    <title>Watson 英语口语助手 - 自由对话</title>
+	<link rel="icon" href="../images/favor.ico" title="spoken english assistant">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Sidebar CSS -->
+    <link href="../css/sidebar.css" rel="stylesheet">
+	
+	<link href="../css/chat.css" rel="stylesheet">
+
+	<link href="../css/justified-nav.css" rel="stylesheet">
+	<link href="../css/sticky-footer.css" rel="stylesheet">
+	
+	<link href="../css/case3.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Fixed navbar -->
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html"><span><img src="../images/favor.ico" height="20"> </img></span>英语口语助手</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
+					<li><a href="case1.html">朗读对话</a></li>
+					<li><a href="case2.html">场景对话</a></li>
+					<li class="active"><a href="#">自由对话</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a role="button" data-toggle="modal" data-target="#AboutModal">关于 </a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+    </nav>
+	<!-- /#Fixed navbar 
+	
+	<!-- About Modal -->
+	<div class="modal fade" id="AboutModal" tabindex="-1" role="dialog" aria-labelledby="AboutModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="AboutModalLabel">About us</h4>
+				</div>
+				<div class="modal-body">
+					<p><b>Spoken English Assistant</b></p>
+					<p>Project for <i>Spoken English Assistant</i> @ RUC-Navigator</p>
+					<p>Project: <a href="https://github.com/RUC-Navigator" target="_blank">Source Code</a></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">Title</a>
+                </li>
+                <li>
+                    <a href="#">Content 1</a>
+                </li>
+				<li>
+                    <a href="#">Content 2</a>
+                </li>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <!-- a href="#menu-toggle" class="btn btn-warning" id="menu-toggle">Toggle</a -->
+            <div class="container chat">
+				<br>			
+				<ol id="recordingslist">
+					<li class="comment-right">
+						<div class="comment-meta">
+							<img src="../images/favor.ico" width="60" height="60" alt="assistant">
+							<h4>English Assistant</h4>
+					    </div>
+						<blockquote>
+							<p>Press the micro button and start to talk with me ! </p>
+						</blockquote>
+					</li>
+				</ol>
+				<div id="load" class="col-lg-12">
+					<img src="../images/watson.gif"></img>
+				</div>
+			</div>
+			<!-- /#container -->
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+	<!-- Fixed navbar -->
+	<nav id="footer" class="navbar navbar-default navbar-fixed-bottom">	
+		<div class="micro">
+			<div class="micButton-preload"></div>
+			<div class="micButton" onmousedown="startRecord()" onmouseup="stopRecord()"></div>
+			<div id="log"><p id="output">Press to start speaking</p></div>
+		</div>
+	</nav>
+	<!-- /#Fixed navbar -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+	
+	<script src="../js/buzz.min.js"></script>
+
+	<script src="../js/recorder.js"></script>
+	<script src="../js/case3.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
