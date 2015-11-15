@@ -6,10 +6,7 @@ the server part
 - ``npm install express``
 - ``npm install connect-multiparty``
 - ``npm install watson-developer-cloud``
-
-## Clone
-
-- clone the static repo in *spoken-english-assistant/*
+- 
 
 ## Run
 
